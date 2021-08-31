@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mouse Hunter</title>
+        <link type="icon" rel="icon" href="img/rat.png" />
+        <meta name="description" content="a mini game hunting mice" />
+        <meta name="author" content="Joseph Song" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courgette&family=Parisienne&family=Playfair+Display:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <script
+            src="https://kit.fontawesome.com/44a36fcebf.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="http://fonts.cdnfonts.com/css/raven-scream"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <section class="mainScreen">
+            <header class="title">Mouse Hunter</header>
+            <button class="playBg">
+                <i class="fas fa-volume-up"></i>
+            </button>
+            <div class="gameMenu">
+                <button class="gameBtn">PLAY GAME</button>
+                <button class="ruleBtn">HOW TO PLAY</button>
+                <span class="gameTimer gameTimer__hide"></span>
+                <span class="gameLevel gameLevel__hide"></span>
+                <span class="gameLeftMouse gameLeftMouse__hide"></span>
+                <span class="gameBullet gameBullet__hide"></span>
+            </div>
+            <div class="ruleDescription ruleDescription__hide">
+                <button class="closeBtn">
+                    <i class="far fa-window-close"></i>
+                </button>
+                🖱 Mouse left click: Aimming<br /><br />
+                🖱 Mouse right click: Shooting<br /><br />
+                Catch mice🐭 before the timer finished. <br /><br />
+                If you use all bullets🔫 provided, you will lose.
+            </div>
+        </section>
+
+        <section class="gameScreen gameScreen__hide">
+            <section class="gameField"></section>
+            <div class="popUp popUp__hide">
+                <div class="btns">
+                    <button class="reStartBtn">
+                        <i class="fas fa-redo-alt"></i>
+                    </button>
+                    <button class="nextLevelBtn">
+                        <img src="img/levelUp.png" alt="levelUp" />
+                    </button>
+                </div>
+
+                <span class="comment"></span>
+            </div>
+            <img
+                class="sniper sniper__hide"
+                src="img/sniper.png"
+                alt="sniper.png"
+            />
+        </section>
+    </body>
+</html>
